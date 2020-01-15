@@ -97,7 +97,7 @@ variable "cmd_extension" {
 }
 
 variable "tags" {
-  type        = "map"
+  type        = map(string)
   description = "A map of the tags to use on the resources that are deployed with this module."
 
   default = {

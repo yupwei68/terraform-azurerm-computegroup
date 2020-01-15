@@ -18,7 +18,7 @@ module "loadbalancer" {
   location            = "${var.location}"
   prefix              = "${random_id.ip_dns.hex}"
 
-  "lb_port" {
+  lb_port = {
     http = ["80", "Tcp", "80"]
   }
 }
